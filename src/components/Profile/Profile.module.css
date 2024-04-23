@@ -5,7 +5,7 @@
   margin-left: auto;
   padding-top: 30px;
   background-color: var(--main-bg-color);
-  border-radius: 5%;
+  border-radius: var(--main-border-radius);
   border: var(--main-border);
   color: var(--main-font-color);
 }
