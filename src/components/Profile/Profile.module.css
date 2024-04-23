@@ -1,10 +1,6 @@
 /* CREATE CLASSES */
 
 .user-card {
-  --main-font-color: #010e54;
-  --main-bg-color: #daeaf7;
-  --main-border: 1px solid #010e54;
-
   margin-right: auto;
   margin-left: auto;
   padding-top: 30px;
