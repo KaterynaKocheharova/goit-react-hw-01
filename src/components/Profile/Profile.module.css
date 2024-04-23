@@ -1,0 +1,62 @@
+/* CREATE CLASSES */
+
+.user-card {
+  --main-font-color: #010e54;
+  --main-bg-color: #daeaf7;
+  --main-border: 1px solid #010e54;
+
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 30px;
+  background-color: var(--main-bg-color);
+  border-radius: 5%;
+  border: var(--main-border);
+  color: var(--main-font-color);
+}
+
+.user-image {
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 50%;
+  border: var(--main-border);
+  margin-bottom: 15px;
+}
+
+.user-name {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.user-nickname,
+.user-location {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.user-name,
+.user-stat-detail {
+  font-weight: 700;
+}
+
+.user-stat-list {
+  border-top: var(--main-border);
+  width: 100%;
+  display: flex;
+}
+
+.user-stat-item {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  row-gap: 15px;
+}
+
+.user-stat-item:first-child {
+  border-right: var(--main-border);
+}
+
+.user-stat-item:last-child {
+  border-left: var(--main-border);
+}

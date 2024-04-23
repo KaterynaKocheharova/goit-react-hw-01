@@ -1,25 +1,33 @@
 import PropTypes from "prop-types";
+import clsx from "clsx";
+import css from "./Profile.module.css";
 
 function Profile({ name, tag, location, image, stats }) {
   return (
-    <div>
+    <div className={clsx(css["user-card"])}>
       <div>
-        <img src={image} alt="User avatar" />
-        <p>{name}</p>
-        <p>{tag}</p>
-        <p>{location}</p>
+        <img
+          className={clsx(css["user-image"])}
+          src={image}
+          alt="User avatar"
+          width="100"
+          height="100"
+        />
+        <p className={clsx(css["user-name"])}>{name}</p>
+        <p className={clsx(css["user-nickname"])}>{tag}</p>
+        <p className={clsx(css["user-location"])}>{location}</p>
       </div>
-      <ul>
-        <li>
-          <span>Followers</span>
+      <ul className={clsx(css["user-stat-list"])}>
+        <li className={clsx(css["user-stat-item"])}>
+          <span className={clsx(css["user-stat-detail"])}>Followers</span>
           <span>{stats.followers}</span>
         </li>
-        <li>
-          <span>Views</span>
+        <li className={clsx(css["user-stat-item"])}>
+          <span className={clsx(css["user-stat-detail"])}>Views</span>
           <span>{stats.views}</span>
         </li>
-        <li>
-          <span>Likes</span>
+        <li className={clsx(css["user-stat-item"])}>
+          <span className={clsx(css["user-stat-detail"])}>Likes</span>
           <span>{stats.likes}</span>
         </li>
       </ul>
