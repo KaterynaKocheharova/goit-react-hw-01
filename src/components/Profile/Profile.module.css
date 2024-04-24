@@ -9,6 +9,7 @@
   border-radius: var(--main-border-radius);
   border: var(--main-border);
   color: var(--main-font-color);
+  margin-bottom: 70px;
 }
 
 .user-image {

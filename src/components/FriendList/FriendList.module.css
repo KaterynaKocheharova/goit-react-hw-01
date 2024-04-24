@@ -1,0 +1,21 @@
+.friends-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 70px;
+}
+
+.friend-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+  background-color: var(--main-bg-color);
+  color: var(--main-font-color);
+  border: var(--main-border);
+  border-radius: var(--main-border-radius);
+  padding: 50px;
+}
+
+.friends-image {
+}

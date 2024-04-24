@@ -6,7 +6,7 @@ import friendsData from "./data/friends-data.json";
 
 export default function App() {
   return (
-    <>
+    <section>
       <Profile
         name={userData.username}
         tag={userData.tag}
@@ -15,6 +15,6 @@ export default function App() {
         stats={userData.stats}
       />
       <FriendList friends={friendsData} />
-    </>
+    </section>
   );
 }
