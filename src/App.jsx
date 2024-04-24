@@ -1,12 +1,13 @@
-import "./App.css";
 import Profile from "./components/Profile/Profile";
 import FriendList from "./components/FriendList/FriendList";
 import userData from "./data/user-data.json";
 import friendsData from "./data/friends-data.json";
+import clsx from "clsx";
+import css from "./App.module.css";
 
 export default function App() {
   return (
-    <section>
+    <section className={clsx(css["main-profile-section"], css["container"])}>
       <Profile
         name={userData.username}
         tag={userData.tag}
