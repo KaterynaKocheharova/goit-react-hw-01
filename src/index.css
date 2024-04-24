@@ -7,17 +7,9 @@
   --main-border-radius: 5%;
 }
 
-html {
-  height: 100%;
-}
-
 body {
   font-family: sans-serif;
   line-height: 1.5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
 }
 
 h1,
