@@ -39,9 +39,9 @@
 }
 
 .user-stat-list {
-  border-top: var(--main-border);
   width: 100%;
   display: flex;
+  border-top: var(--main-border);
 }
 
 .user-stat-item {
