@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import clsx from "clsx";
 import css from "./Profile.module.css";
 
@@ -34,17 +33,4 @@ function Profile({ name, tag, location, image, stats }) {
     </div>
   );
 }
-
-Profile.propTypes = {
-  name: PropTypes.string.isRequired, // Add this line for name validation
-  tag: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  stats: PropTypes.shape({
-    followers: PropTypes.number.isRequired,
-    views: PropTypes.number.isRequired,
-    likes: PropTypes.number.isRequired,
-  }).isRequired,
-};
-
 export default Profile;
