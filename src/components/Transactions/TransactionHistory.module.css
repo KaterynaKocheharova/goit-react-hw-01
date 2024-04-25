@@ -6,6 +6,18 @@
   border-collapse: collapse;
 }
 
+.payment-row {
+  background-color: #f4e092;
+}
+
+.withdrawal-row {
+  background-color: #9fd4b8;
+}
+
+.invoice-row {
+  background-color: #df9e93;
+}
+
 .table-cell {
   padding: 15px;
   text-align: center;

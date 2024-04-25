@@ -13,8 +13,20 @@ export default function TransactionHistory({ transactions }) {
       </thead>
       <tbody>
         {transactions.map(({ id, type, amount, currency }) => {
+          let rowClass;
+          switch (type) {
+            case "payment":
+              rowClass = css["payment-row"];
+              break;
+            case "withdrawal":
+              rowClass = css["withdrawal-row"];
+              break;
+            default:
+              rowClass = css["invoice-row"];
+          }
+
           return (
-            <tr key={id}>
+            <tr className={clsx(rowClass)} key={id}>
               <td className={clsx(css["table-cell"])}>{type}</td>
               <td className={clsx(css["table-cell"])}>{amount}</td>
               <td className={clsx(css["table-cell"])}>{currency}</td>
