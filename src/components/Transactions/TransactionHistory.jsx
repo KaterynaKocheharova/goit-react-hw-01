@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import css from "./TransactionHistory.module.css";
+import Transaction from "./Transaction";
 
 export default function TransactionHistory({ transactions }) {
   return (
@@ -12,27 +13,9 @@ export default function TransactionHistory({ transactions }) {
         </tr>
       </thead>
       <tbody>
-        {transactions.map(({ id, type, amount, currency }) => {
-          let rowClass;
-          switch (type) {
-            case "payment":
-              rowClass = css["payment-row"];
-              break;
-            case "withdrawal":
-              rowClass = css["withdrawal-row"];
-              break;
-            default:
-              rowClass = css["invoice-row"];
-          }
-
-          return (
-            <tr className={clsx(rowClass)} key={id}>
-              <td className={clsx(css["table-cell"])}>{type}</td>
-              <td className={clsx(css["table-cell"])}>{amount}</td>
-              <td className={clsx(css["table-cell"])}>{currency}</td>
-            </tr>
-          );
-        })}
+        {transactions.map((transaction) => (
+          <Transaction transaction={transaction} key={transaction.id} />
+        ))}
       </tbody>
     </table>
   );
