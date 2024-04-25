@@ -4,9 +4,21 @@
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 375px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 16px;
   padding-left: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1136px) {
+  .container {
+    max-width: 1440px;
+  }
 }
