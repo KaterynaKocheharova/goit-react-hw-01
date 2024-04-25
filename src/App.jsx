@@ -10,13 +10,7 @@ import css from "./App.module.css";
 export default function App() {
   return (
     <section className={clsx(css["main-profile-section"], css["container"])}>
-      <Profile
-        name={userData.username}
-        tag={userData.tag}
-        location={userData.location}
-        image={userData.avatar}
-        stats={userData.stats}
-      />
+      <Profile profileData={userData} />
       <FriendList friends={friendsData} />
       <TransactionHistory transactions={transactionsData} />
     </section>
