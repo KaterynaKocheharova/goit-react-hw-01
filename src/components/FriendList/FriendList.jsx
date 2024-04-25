@@ -8,9 +8,21 @@ export default function FriendList({ friends }) {
         const statusText = isOnline ? "Online" : "Offline";
         return (
           <li className={clsx(css["friend-card"])} key={id}>
-            <img src={avatar} alt="Avatar" width="48" />
-            <p>{name}</p>
-            <p>{statusText}</p>
+            <img
+              className={clsx(css["friend-image"])}
+              src={avatar}
+              alt="Avatar"
+              width="70"
+            />
+            <p className={clsx(css["friend-name"])}>{name}</p>
+            <p
+              className={clsx(
+                css["friend-status"],
+                isOnline ? css["online"] : css["offline"]
+              )}
+            >
+              {statusText}
+            </p>
           </li>
         );
       })}

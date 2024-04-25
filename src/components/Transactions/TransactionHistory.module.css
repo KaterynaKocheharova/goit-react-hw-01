@@ -1,0 +1,21 @@
+.table {
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  border: var(--main-border);
+  border-collapse: collapse;
+}
+
+.table-cell {
+  padding: 15px;
+  text-align: center;
+  border: var(--main-border);
+  color: var(--main-font-color);
+}
+
+@media screen and (max-width: 768px) {
+  .table-cell {
+    padding: 10px;
+    font-size: 0.8em;
+  }
+}
