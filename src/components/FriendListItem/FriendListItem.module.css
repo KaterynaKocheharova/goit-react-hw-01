@@ -1,0 +1,20 @@
+.friend-image {
+  border-radius: 50%;
+  border: var(--main-border);
+}
+
+.friend-name {
+  font-size: 30px;
+}
+
+.friend-status {
+  font-size: 20px;
+}
+
+.online {
+  color: green;
+}
+
+.offline {
+  color: red;
+}

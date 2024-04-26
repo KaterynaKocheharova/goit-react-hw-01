@@ -7,7 +7,7 @@
   margin-bottom: 70px;
 }
 
-.friend-card {
+.friend-list-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,25 +18,4 @@
   border: var(--main-border);
   border-radius: var(--main-border-radius);
   padding: 50px;
-}
-
-.friend-image {
-  border-radius: 50%;
-  border: var(--main-border);
-}
-
-.friend-name {
-  font-size: 30px;
-}
-
-.friend-status {
-  font-size: 20px;
-}
-
-.online {
-  color: green;
-}
-
-.offline {
-  color: red;
 }

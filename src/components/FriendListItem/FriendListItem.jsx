@@ -1,10 +1,10 @@
 import clsx from "clsx";
-import css from "./FriendList.module.css";
+import css from "./FriendListItem.module.css";
 
-export default function Friend({ friend: { avatar, isOnline, name } }) {
+export default function FriendListItem({ friend: { avatar, isOnline, name } }) {
   const statusText = isOnline ? "Online" : "Offline";
   return (
-    <li className={clsx(css["friend-card"])}>
+    <>
       <img
         className={clsx(css["friend-image"])}
         src={avatar}
@@ -20,6 +20,6 @@ export default function Friend({ friend: { avatar, isOnline, name } }) {
       >
         {statusText}
       </p>
-    </li>
+    </>
   );
 }
