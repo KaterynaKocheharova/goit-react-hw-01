@@ -6,12 +6,12 @@ export default function FriendListItem({ friend: { avatar, isOnline, name } }) {
   return (
     <>
       <img
-        className={clsx(css["friend-image"])}
+        className={css["friend-image"]}
         src={avatar}
         alt="Avatar"
         width="70"
       />
-      <p className={clsx(css["friend-name"])}>{name}</p>
+      <p className={css["friend-name"]}>{name}</p>
       <p
         className={clsx(
           css["friend-status"],

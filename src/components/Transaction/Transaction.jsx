@@ -1,4 +1,3 @@
-import clsx from "clsx";
 import css from "./Transaction.module.css";
 
 export default function Transaction({
@@ -17,10 +16,10 @@ export default function Transaction({
   }
 
   return (
-    <tr className={clsx(rowClass)}>
-      <td className={clsx(css["table-cell"])}>{type}</td>
-      <td className={clsx(css["table-cell"])}>{amount}</td>
-      <td className={clsx(css["table-cell"])}>{currency}</td>
+    <tr className={rowClass}>
+      <td className={css["table-cell"]}>{type}</td>
+      <td className={css["table-cell"]}>{amount}</td>
+      <td className={css["table-cell"]}>{currency}</td>
     </tr>
   );
 }

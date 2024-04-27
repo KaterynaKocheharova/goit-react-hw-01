@@ -1,15 +1,14 @@
-import clsx from "clsx";
 import css from "./TransactionHistory.module.css";
 import Transaction from "../Transaction/Transaction";
 
 export default function TransactionHistory({ transactions }) {
   return (
-    <table className={clsx(css["table"])}>
+    <table className={css["table"]}>
       <thead>
         <tr>
-          <th className={clsx(css["table-cell"])}>Type</th>
-          <th className={clsx(css["table-cell"])}>Amount</th>
-          <th className={clsx(css["table-cell"])}>Currency</th>
+          <th className={css["table-cell"]}>Type</th>
+          <th className={css["table-cell"]}>Amount</th>
+          <th className={css["table-cell"]}>Currency</th>
         </tr>
       </thead>
       <tbody>
