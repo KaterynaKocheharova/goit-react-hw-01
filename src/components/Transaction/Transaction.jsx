@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import css from "./TransactionHistory.module.css";
+import css from "./Transaction.module.css";
 
 export default function Transaction({
   transaction: { type, amount, currency },

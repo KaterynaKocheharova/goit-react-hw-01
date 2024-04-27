@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import css from "./TransactionHistory.module.css";
-import Transaction from "./Transaction";
+import Transaction from "../Transaction/Transaction";
 
 export default function TransactionHistory({ transactions }) {
   return (

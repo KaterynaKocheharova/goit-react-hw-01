@@ -1,9 +1,13 @@
-.table {
-  max-width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  border: var(--main-border);
-  border-collapse: collapse;
+.payment-row {
+  background-color: #f4e092;
+}
+
+.withdrawal-row {
+  background-color: #9fd4b8;
+}
+
+.invoice-row {
+  background-color: #df9e93;
 }
 
 .table-cell {
